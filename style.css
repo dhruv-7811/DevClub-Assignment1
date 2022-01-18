@@ -17,19 +17,19 @@
 }
 .nav-list li{
     list-style: none;
-    padding: 26px 10px;    
+    padding: 26px 20px;    
 }
 .nav-list li a{
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 30px;
     text-decoration: none;
     color: rgb(255,255, 255,1);
 }
 .nav-list li a:hover{
     text-decoration: none;
-    color:chocolate;
+    color: rgba(232, 175, 206, 1);
 }
 .home{
     width: 1440px;
@@ -251,15 +251,16 @@ th,td{
 }
 #faq1_head{
     position: absolute;
-    width: 203px;
+    width: 1161px;
     height: 28px;
-    left: 550px;
+    left: 66px;
     top: 45px;
+    text-align: center;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 28px;
 
     color: #000000;
@@ -271,13 +272,7 @@ th,td{
     left: 90px;
     top: 95px;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
 
-    color: #000000;
 }
 .faq2{
     position: absolute;
@@ -293,14 +288,15 @@ th,td{
 }
 #faq2_head{
     position: absolute;
-    width: 600px;
+    width: 1161px;
     height: 28px;
-    left: 338px;
+    left: 66px;
     top: 290px;
+    text-align: center;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 28px;
     color: #000000;
 }
@@ -311,13 +307,7 @@ th,td{
     left: 90px;
     top: 355px;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
 
-    color: #000000;
 }
 .faq3{
     position: absolute;
@@ -333,14 +323,14 @@ th,td{
 }
 #faq3_head{
     position: absolute;
-    width: 680px;
-    height: 28px;
-    left: 338px;
+    width: 1161px;
+    left: 66px;
     top: 513px;
+    text-align: center;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 28px;
     color: #000000;
 }
@@ -351,10 +341,13 @@ th,td{
     left: 90px;
     top: 585px;
 
+
+}
+.faq-font{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 21px;
 
     color: #000000;
@@ -372,7 +365,7 @@ th,td{
     font-style: normal;
     font-weight: 600;
     font-size: 54px;
-    line-height: 66px;
+    line-height: 125px;
 
     text-align: center;
 
@@ -401,4 +394,11 @@ th,td{
     text-align: center;
 
     color: #4C0027;
+}
+#linkedin{
+    text-decoration: underline;
+    color: #4C0027;
+}
+#linkedin:hover{
+    color: #c01818a9;
 }
