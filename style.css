@@ -1,404 +1,200 @@
 *{
-    margin: 0;
+    margin:0;
 }
-.navbar{
+nav{ 
+    background: #4C0027;
+}
+#corona{
+    width: 10vw;
+}
+ul{
     display: flex;
-    align-items: center;
-    position: sticky;
-    width: 1440px;
-    background-color:rgb(76, 0, 39,1);
-}
-.nav-list{
-    display: flex;
-    align-items: center;
-
-    line-height: 28px;
-    padding-left: 70px;
-}
-.nav-list li{
     list-style: none;
-    padding: 26px 20px;    
+    justify-content: space-between;
+    padding-left: 0;
 }
-.nav-list li a{
+.rightNav{
+    display: flex;
+}
+.rightNav li{
+    display: flex;
+    align-items: center;
+}
+ul li a{
+    text-decoration: none;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 30px;
-    text-decoration: none;
-    color: rgb(255,255, 255,1);
+    font-size: 20px;
+    padding: 1vw;
+    color: #FFFFFF;
 }
-.nav-list li a:hover{
-    text-decoration: none;
-    color: rgba(232, 175, 206, 1);
+ul li a:hover{
+    color: #E8AFCE;
 }
-.home{
-    width: 1440px;
-    height: 1024px;
-    background-color:rgb(76, 0, 39,1);
+#home{
+    background: #4C0027;
 }
-.p1{
-    color: rgba(232, 175, 206, 1);
-    position: absolute;
-    width: 1195px;
-    height: 118px;
-    left: 85px; 
-    top: 248px;
+#home #p1{
+    padding: 10vh 2vw 10vh 2vw;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
-    line-height: 59px;
-    
+    color: #E8AFCE;
+    width: 85vw;
 }
-.p2{
-    position: absolute;
-    width: 943px;
-    height: 234px;
-    left: 85px;
-    top: 395px;
-
+#home #p2{
+    padding: 8vh 2vw;
+    width: 74vw;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 800;
     font-size: 96px;
-    line-height: 117px;
-
     color: #FFFFFF;
 }
-.virus{
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    left: 927px;
-    top: 512px;
-}
-.tips{
+#home img {
+    width: 40%;
     position: relative;
-    width: 1440px;
-    height: 1015px;
+    left: 60vw; 
 }
-#tips_head{
-    position: absolute;
-    width: 113px;
-    height: 66px;
-    left: 664px;
-    top: 29px;
-
+#tips h1{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 54px;
-    line-height: 66px;
-
-    text-align: center;
-
     color: #4C0027;
+    text-align: center;
+    padding: 5vh 0vw 5vh 0vw;
 }
-.tip1{
-    position: absolute;
-    width: 1293px;
-    height: 369px;
-    left: 74px;
-    top: 120px;
-
-    border: 1px solid #E8AFCE;
-    box-sizing: border-box;
-    border-radius: 5px;
-}
-.Right1{
-    position: absolute;
-    width: 317px;
-    height: 66px;
-    left: 799px;
-    top: 160px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 54px;
-    line-height: 66px;
-    color: #000000;
-}
-.Left1{
-    position:absolute;
-    width: 346px;
-    height: 346px;
-    left: 55px;
-    top: 16px;
-
-}
-#maskimg{
-    width: 360px;
-}
-.tip2{
-    position: absolute;
-    width: 1293px;
-    height: 369px;
-    left: 74px;
-    top: 545px;
-
+#box1{
+    padding: 5vh 5vw 5vh 4vw;
+    display: flex;
     background: #FFFFFF;
     border: 1px solid #E8AFCE;
     box-sizing: border-box;
     border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5vw;
 }
-.Left2{
-    position: absolute;
-    width: 346px;
-    height: 66px;
-    left: 86px;
-    top: 147px;
-
+#tips p{
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 54px;
-    line-height: 66px;
-
     color: #000000;
 }
-.Right2{
-    position: absolute;
-    width: 342px;
-    height: 342px;
-    left: 809px;
-    top: 14px;
+#tips img{
+    width:20%
 }
-#handwashimg{
-    width: 360px;
+#box2{
+    padding: 5vh 5vw 5vh 4vw;
+    display: flex;
+    flex-direction: row-reverse;
+    background: #FFFFFF;
+    border: 1px solid #E8AFCE;
+    box-sizing: border-box;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10vh 5vw;
 }
-.symptoms{
-    position: absolute;
-    width: 1440px;
-    height: 721px;
+#symptoms{
     background: #E8AFCE;
-    left: 0px;
-    top: 2121px;
 }
-#sympHead{
-    position: absolute;
-    width: 300px;
-    height: 66px;
-    left: 570px;
-    top: 54px;
-
+#symptoms h1{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 54px;
-    line-height: 66px;
-
-
     color: #4C0027;
+    text-align: center;
+    padding: 5vh 0vw 5vh 0vw;
 }
 #table{
-    position: absolute;
-    width: 951px;
-    height: 454px;
-    left: 244px;
-    top: 161px;
+
     background: #FFFFFF;
     border: 8px solid #750550;
     box-sizing: border-box;
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
     border-collapse: collapse;
+    width: 70vw;
+    height: 70vh;
+    margin: 10vh 15vw 0 15vw;
 }
-th,td{
+#table th,td{
     border: 8px solid #750550;
 }
-.faqs{
-    position: absolute;
-    width:1440px;
-    height: 1000px;
-    left: 0px;
-    top: 2890px;
+#end{
+    height: 10vh;
+    background: #E8AFCE;
 }
-#headingFAQ{
+#faqs{
+
+}
+#faqs h1{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 54px;
-    line-height: 66px;
-
     text-align: center;
-
-    color: #4C0027;
+    color: #750550;
+    padding: 5vh 0vw 5vh 0vw;
 }
-.faq{
-    position: absolute;
-    width: 1293px;
-    height: 754px;
-    left: 74px;
-    top: 150px;
-
-    background: #FFFFFF;
+.box{
     border: 1px solid #E8AFCE;
     box-sizing: border-box;
     border-radius: 5px;
+    margin: 5vh 10vw;
 }
-.faq1{
-    position: absolute;
-    width: 1161px;
-    height: 198px;
-    left: 66px;
-    top: 40px;
-
-    background: #FFFFFF;
-    border: 1px solid #E8AFCE;
-    box-sizing: border-box;
-    border-radius: 5px;
-}
-#faq1_head{
-    position: absolute;
-    width: 1161px;
-    height: 28px;
-    left: 66px;
-    top: 45px;
-    text-align: center;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 28px;
-
-    color: #000000;
-}
-#faq1_body{
-    position: absolute;
-    width: 1129px;
-    height: 105px;
-    left: 90px;
-    top: 95px;
-
-
-}
-.faq2{
-    position: absolute;
-    width: 1161px;
-    height: 198px;
-    left: 66px;
-    top: 270px;
-
-    background: #FFFFFF;
-    border: 1px solid #E8AFCE;
-    box-sizing: border-box;
-    border-radius: 5px;
-}
-#faq2_head{
-    position: absolute;
-    width: 1161px;
-    height: 28px;
-    left: 66px;
-    top: 290px;
+.box h2{
+    padding-top: 2vh;
     text-align: center;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 28px;
-    color: #000000;
 }
-#faq2_body{
-    position: absolute;
-    width: 1129px;
-    height: 105px;
-    left: 90px;
-    top: 355px;
-
-
-}
-.faq3{
-    position: absolute;
-    width: 1161px;
-    height: 198px;
-    left: 66px;
-    top: 500px;
-
-    background: #FFFFFF;
-    border: 1px solid #E8AFCE;
-    box-sizing: border-box;
-    border-radius: 5px; 
-}
-#faq3_head{
-    position: absolute;
-    width: 1161px;
-    left: 66px;
-    top: 513px;
-    text-align: center;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 28px;
-    color: #000000;
-}
-#faq3_body{
-    position: absolute;
-    width: 1129px;
-    height: 105px;
-    left: 90px;
-    top: 585px;
-
-
-}
-.faq-font{
+.box p{
+    padding: 2vh 2vw;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 21px;
-
+    font-size: 18px;
+    line-height: 23px;
     color: #000000;
 }
-.youtube{
-    position: absolute;
-    width: 1440px;
-    height: 650px;
+#youtube{
     background: #E8AFCE;
-    left: 0px;
-    top: 3821px;
 }
-#youtube_head{
+#youtube h1{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 54px;
-    line-height: 125px;
-
     text-align: center;
-
     color: #4C0027;
 }
-.video{
-    position: absolute;
-    left: 445px;
-    top: 170px;
+#youtube iframe{
+    width: 50vw;
+    padding: 6vh 25vw;
+    height: 50vh;
 }
-.madeBy{
-    position: absolute;
-    width: 1440px;
-    height: 65px;
+footer{
     background: #E8AFCE;
-    left: 0px;
-    top: 4470px;
-
-}
-#madeByHead{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
     text-align: center;
-
+}
+footer p{
+    font-family: Montserrat;
+    font-style: normal; 
     color: #4C0027;
 }
-#linkedin{
-    text-decoration: underline;
+footer a{
     color: #4C0027;
 }
-#linkedin:hover{
-    color: #c01818a9;
+footer a:hover{
+    color: #FFFFFF;
 }

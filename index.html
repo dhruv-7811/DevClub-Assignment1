@@ -8,46 +8,43 @@
 	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-		<nav class="navbar">
-			<ul class="nav-list">
-				<li><a href="#Home">Home</a></li>
-				<li><a href="#Tips">Tips</a></li>
-				<li><a href="#Symptoms">Symptoms</a></li>
-				<li><a href="#FAQs">FAQs</a></li>
-				<li><a href="#Youtube">Youtube</a></li>
-				
-			</ul>
-		</nav>
-	<section id="Home" class="home">
-			<p class="p1">
-				Confused about where to get the right information about COVID-19?
-			</p>
-			<p class="p2">
-				Don't worry, we got you.
-			</p>
-			<img src="./images/virus.png" alt="virus" class="virus">		
-	</section>
-	<section class="tips" id="Tips">
-		<h1 id="tips_head">Tips</h1>
-		<div class="tip1">
-			<div class="Right1">
-				<p class="tipsText">Wear mask.</p>
+	<nav>
+		<ul>
+			<div class="logo">
+				<img src="./images/corona.jpg" alt="logo" id=corona>
 			</div>
-			<div class="Left1">
-				<img src="./images/mask.png" alt="Mask" id="maskimg">
+			<div class="rightNav">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#tips">Tips</a></li>
+				<li><a href="#symptoms">Symptoms</a></li>
+				<li><a href="#faqs">FAQs</a></li>
+				<li><a href="#youtube">YouTube</a></li>	
 			</div>
+		</ul>
+
+	</nav>
+	<div id="home">
+		<p id="p1">
+			Confused about where to get the right information about COVID-19?
+		</p>
+		<p id="p2">
+			Don't worry, we got you!
+		</p>
+		<img src="./images/virus.png" alt="Virus">
+	</div>
+	<div id="tips">
+		<h1>Tips</h1>
+		<div id="box1">
+			<p>Wear mask.</p>
+			<img src="./images/mask.png" alt="Mask">
 		</div>
-		<div class="tip2">
-			<div class="Left2">
-				<p class="tipsText">Wash Hands.</p>
-			</div>
-			<div class="Right2">
-				<img src="./images/handwash.png" alt="handwash" id="handwashimg">
-			</div>
+		<div id="box2">
+			<p>Wash hands.</p>
+			<img src="./images/handwash.png" alt="Handwash">
 		</div>
-	</section>
-	<section class="symptoms" id="Symptoms">
-		<h1 id="sympHead">Symptoms</h1>
+	</div>
+	<div id="symptoms">
+		<h1>Symptoms</h1>
 		<table id="table">
 			<tr id="tableHead">
 			  <th>Symptom</th>
@@ -74,46 +71,30 @@
 				<td>Mild</td>
 				<td>Get enough sleep and cut out caffine.</td>
 			  </tr>
-		  </table>
-	</section>
-	<section class="faqs" id="FAQs">
-		<h1 id="headingFAQ">FAQs</h1>
-		<div class="faq">
-			<p class="faq1">
-				<h4 id="faq1_head">What is COVID-19?</h4>
-				<br>
-				<article id="faq1_body" class="faq-font">
-					COVID-19 is a disease caused by a virus called SARS-CoV-2. Most people with COVID-19 have mild symptoms, but some people can become severely ill. Although most people with COVID-19 get better within weeks of illness, some people experience post-COVID conditions. Post-COVID conditions are a wide range of new, returning, or ongoing health problems people can experience more than four weeks after first being infected with the virus that causes COVID-19. Older people and those who have certain underlying medical conditions are more likely to get severely ill from COVID-19. Vaccines against COVID-19 are safe and effective.
-				</article>
-			</p>
-			<p class="faq2">
-				<h4 id="faq2_head">Should I use soap and water or sanitizer to protect myself?</h4>
-				<br>
-				<article id="faq2_body" class="faq-font">
-					Handwashing is one of the best ways to protect yourself and your family from getting sick. Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol.
-				</article>
-			</p>
-			<p class="faq3">
-				<h4 id="faq3_head">What are the symptoms and complications that COVID-19 can cause?</h4>
-				<br>
-				<article id="faq3_body" class="faq-font">
-					People with COVID-19 have reported a wide range of symptoms – from mild symptoms to severe illness. Symptoms may appear 2-14 days after exposure to the virus. If you have fever, cough, or other symptoms, you might have COVID-19.
-				</article>
-
-			</p>
+		</table>
+		<div id="end"></div>
+	</div>
+	<div id="faqs">
+		<h1>FAQs</h1>
+		<div class="box">
+			<h2>What is COVID-19?</h2>
+			<p>COVID-19 is a disease caused by a virus called SARS-CoV-2. Most people with COVID-19 have mild symptoms, but some people can become severely ill. Although most people with COVID-19 get better within weeks of illness, some people experience post-COVID conditions. Post-COVID conditions are a wide range of new, returning, or ongoing health problems people can experience more than four weeks after first being infected with the virus that causes COVID-19. Older people and those who have certain underlying medical conditions are more likely to get severely ill from COVID-19. Vaccines against COVID-19 are safe and effective.</p>
 		</div>
-	</section>
-	<section class="youtube" id="Youtube">
-		<h1 id="youtube_head">YouTube</h1>
-		<div class="video">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9S6xGsoqIBU2V6AZYGlJwZRAFJ3YDreb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="box">
+			<h2>Should I use soap and water or sanitizer to protect myself?</h2>
+			<p>Handwashing is one of the best ways to protect yourself and your family from getting sick. Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol.</p>
 		</div>
-	</section>
-	<section class="madeBy">
-		<h1 id="madeByHead">
-			This website is developed by <a id="linkedin" href="https://www.linkedin.com/in/dhruv-jain-488589179">Dhruv Jain.</a></h1>
-	</section>
-
-	
+		<div class="box">
+			<h2>What are the symptoms and complications that COVID-19 can cause?</h2>
+			<p>People with COVID-19 have reported a wide range of symptoms – from mild symptoms to severe illness. Symptoms may appear 2-14 days after exposure to the virus. If you have fever, cough, or other symptoms, you might have COVID-19.</p>
+		</div>
+	</div>
+	<div id="youtube">
+		<h1>YouTube</h1>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9S6xGsoqIBU2V6AZYGlJwZRAFJ3YDreb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<footer>
+		<p>&#169 2022 Copyright: <a href="https://www.linkedin.com/in/dhruv-jain-488589179">Dhruv Jain.</a></p>
+	</footer>
 </body>
 </html>
