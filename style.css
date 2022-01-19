@@ -56,7 +56,7 @@ ul li a:hover{
 #home img {
     width: 40%;
     position: relative;
-    left: 60vw; 
+    left: 58vw; 
 }
 #tips h1{
     font-family: Montserrat;
@@ -100,6 +100,9 @@ ul li a:hover{
     align-items: center;
     margin: 10vh 5vw;
 }
+#box2 p{
+    text-align: end;
+}
 #symptoms{
     background: #E8AFCE;
 }
@@ -120,9 +123,9 @@ ul li a:hover{
     text-align: center;
     font-size: 24px;
     border-collapse: collapse;
-    width: 70vw;
+    width: 80vw;
     height: 70vh;
-    margin: 10vh 15vw 0 15vw;
+    margin: 10vh 10vw 0 10vw;
 }
 #table th,td{
     border: 8px solid #750550;
@@ -180,7 +183,7 @@ ul li a:hover{
 }
 #youtube iframe{
     width: 50vw;
-    padding: 6vh 25vw;
+    padding: 6vh 24vw;
     height: 50vh;
 }
 footer{
