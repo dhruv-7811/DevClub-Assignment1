@@ -2,6 +2,9 @@
     margin:0;
 }
 nav{ 
+    position: fixed;
+    width: 99vw;
+    overflow: hidden;
     background: #4C0027;
 }
 #corona{
@@ -36,7 +39,7 @@ ul li a:hover{
     background: #4C0027;
 }
 #home #p1{
-    padding: 10vh 2vw 10vh 2vw;
+    padding: 30vh 2vw 10vh 2vw;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
