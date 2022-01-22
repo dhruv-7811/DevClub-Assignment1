@@ -2,9 +2,7 @@
     margin:0;
 }
 nav{ 
-    position: fixed;
-    width: 99vw;
-    overflow: hidden;
+
     background: #4C0027;
 }
 #corona{
@@ -15,9 +13,11 @@ ul{
     list-style: none;
     justify-content: space-between;
     padding-left: 0;
+    align-items: center;
 }
 .rightNav{
     display: flex;
+    flex-wrap: wrap;
 }
 .rightNav li{
     display: flex;
@@ -137,9 +137,6 @@ ul li a:hover{
     height: 10vh;
     background: #E8AFCE;
 }
-#faqs{
-
-}
 #faqs h1{
     font-family: Montserrat;
     font-style: normal;
@@ -189,18 +186,56 @@ ul li a:hover{
     padding: 6vh 24vw;
     height: 50vh;
 }
-footer{
-    background: #E8AFCE;
+#hospitals{
+    background: #4C0027;
+}
+#hospitals h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
     text-align: center;
+    color: #FFFFFF
+}
+#hospitals iframe{
+    width: 70vw;
+    padding: 6vh 15vw;
+    height: 60vh;
+}
+footer{
+    background: #4C0027;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 footer p{
+    color: #FFFFFF;
     font-family: Montserrat;
     font-style: normal; 
-    color: #4C0027;
+    padding: 1vh;
+
 }
 footer a{
-    color: #4C0027;
+    color: #FFFFFF;
+    width: 32px;
+    height: 32px;
+
 }
 footer a:hover{
     color: #FFFFFF;
+}
+footer img{
+    width: 32px;
+    height: 32px;
+
+}
+#linkedin{
+    padding: 0 2vw 0 2vw;
+}
+#social{
+    background: #FFFFFF;
+    border: 4px solid white;
+    border-radius: 20px;
+    height: 34px;
+    margin-bottom: 1vh;
 }
