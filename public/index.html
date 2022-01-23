@@ -1,89 +1,124 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Covid Guide</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="icon" type="image" sizes="32x32"  href="./images/covid.png">
+</head>
+<body>
+	<nav>
+		<ul>
+			<div class="logo">
+				<a href="#home">
+					<img src="./images/covid.png" alt="logo" id=corona>
+				</a>
+			</div>
+			<div class="rightNav">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#tips">Tips</a></li>
+				<li><a href="#symptoms">Symptoms</a></li>
+				<li><a href="#faqs">FAQs</a></li>
+				<li><a href="#youtube">YouTube</a></li>
+				<li><a href="#hospitals">Hospitals</a></li>		
+			</div>
+		</ul>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.6.4/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.6.4/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.6.4/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.6.4/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.6.4/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.6.4/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.6.4/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.6.4/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.6.4/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.6.4/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e: any) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+	</nav>
+	<div id="home">
+		<p id="p1">
+			Confused about where to get the right information about COVID-19?
+		</p>
+		<p id="p2">
+			Don't worry, we got you!
+		</p>
+		<img src="./images/virus.png" alt="Virus">
+	</div>
+	<div id="tips">
+		<h1>Tips</h1>
+		<div id="box1">
+			<p>Wear mask.</p>
+			<img src="./images/mask.png" alt="Mask">
+		</div>
+		<div id="box2">
+			<p>Wash hands.</p>
+			<img src="./images/handwash.png" alt="Handwash">
+		</div>
+	</div>
+	<div id="symptoms">
+		<h1>Symptoms</h1>
+		<table id="table">
+			<tr id="tableHead">
+			  <th>Symptom</th>
+			  <th>Severity</th>
+			  <th>Advice</th>
+			</tr>
+			<tr>
+			  <td>Fever</td>
+			  <td>Mild</td>
+			  <td>Take tepid baths and stay hydrated.</td>
+			</tr>
+			<tr>
+			  <td>Cold</td>
+			  <td>Mild</td>
+			  <td>Keep warm and gargle salt water.</td>
+			</tr>
+			<tr>
+				<td>Cough</td>
+				<td>Mild</td>
+				<td>Drink plenty of fluids, especially water.</td>
+			  </tr>
+			  <tr>
+				<td>Tiredness</td>
+				<td>Mild</td>
+				<td>Get enough sleep and cut out caffine.</td>
+			  </tr>
+		</table>
+		<div id="end"></div>
+	</div>
+	<div id="faqs">
+		<h1>FAQs</h1>
+		<div class="box">
+			<h2>What is COVID-19?</h2>
+			<p>COVID-19 is a disease caused by a virus called SARS-CoV-2. Most people with COVID-19 have mild symptoms, but some people can become severely ill. Although most people with COVID-19 get better within weeks of illness, some people experience post-COVID conditions. Post-COVID conditions are a wide range of new, returning, or ongoing health problems people can experience more than four weeks after first being infected with the virus that causes COVID-19. Older people and those who have certain underlying medical conditions are more likely to get severely ill from COVID-19. Vaccines against COVID-19 are safe and effective.</p>
+		</div>
+		<div class="box">
+			<h2>Should I use soap and water or sanitizer to protect myself?</h2>
+			<p>Handwashing is one of the best ways to protect yourself and your family from getting sick. Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol.</p>
+		</div>
+		<div class="box">
+			<h2>What are the symptoms and complications that COVID-19 can cause?</h2>
+			<p>People with COVID-19 have reported a wide range of symptoms – from mild symptoms to severe illness. Symptoms may appear 2-14 days after exposure to the virus. If you have fever, cough, or other symptoms, you might have COVID-19.</p>
+		</div>
+	</div>
+	<div id="youtube">
+		<h1>YouTube</h1>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9S6xGsoqIBU2V6AZYGlJwZRAFJ3YDreb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div id="hospitals">
+		<h1>Hospitals</h1>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d224125.99818701317!2d77.21246356783082!3d28.63069952537256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospital%20near%20Delhi%20!5e0!3m2!1sen!2sin!4v1642699291780!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</div>
+	<footer>
+		<p>
+			For queries regarding COVID-19 contact: <a href="mailto:bb1210321@iitd.ac.in?subject=Query regarding CovidGuide.&body=Hey! I visited your website and had a query regarding  ">Dhruv Jain</a>
+		</p>
+		<p>
+			&#169 2022 Dhruv Jain.</a>
+		</p>
+		<div id="social">
+			<a href="https://github.com/dhruv-7811" target="_blank">
+			     <img src="./images/GitHub-Mark-32px.png" alt="Github" >
+			</a>
+			<a href="https://www.linkedin.com/in/dhruv-jain-488589179" target="_blank" >
+				<img src="./images/LI-In-Bug.png" alt="LinkedIn" id="linkedin">
+			</a>
+			<a href="https://twitter.com/dhruv_19_" target="_blank">
+				<img src="./images/Twitter social icons - circle - blue.png" alt="Twitter">
+			</a>
+		</div>
+	</footer>
+</body>
 </html>
