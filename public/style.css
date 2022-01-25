@@ -1,8 +1,8 @@
 *{
     margin:0;
+    scroll-behavior: smooth;
 }
 nav{ 
-
     background: #4C0027;
 }
 #corona{
