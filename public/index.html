@@ -7,6 +7,8 @@
 	<title>Covid Guide</title>
 	<link rel="stylesheet" href="./style.css">
 	<link rel="icon" type="image" sizes="32x32"  href="./images/covid.png">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 	<nav>
@@ -38,18 +40,18 @@
 	</div>
 	<div id="tips">
 		<h1>Tips</h1>
-		<div id="box1">
+		<div data-aos="fade-right" data-aos-duration="3000" id="box1">
 			<p>Wear mask.</p>
 			<img src="./images/mask.png" alt="Mask">
 		</div>
-		<div id="box2">
+		<div data-aos="fade-left" data-aos-duration="3000" id="box2">
 			<p>Wash hands.</p>
 			<img src="./images/handwash.png" alt="Handwash">
 		</div>
 	</div>
 	<div id="symptoms">
 		<h1>Symptoms</h1>
-		<table id="table">
+		<table data-aos="zoom-in" data-aos-duration="3000" id="table">
 			<tr id="tableHead">
 			  <th>Symptom</th>
 			  <th>Severity</th>
@@ -80,26 +82,26 @@
 	</div>
 	<div id="faqs">
 		<h1>FAQs</h1>
-		<div class="box">
+		<div data-aos="flip-left" data-aos-duration="3000" class="box">
 			<h2>What is COVID-19?</h2>
 			<p>COVID-19 is a disease caused by a virus called SARS-CoV-2. Most people with COVID-19 have mild symptoms, but some people can become severely ill. Although most people with COVID-19 get better within weeks of illness, some people experience post-COVID conditions. Post-COVID conditions are a wide range of new, returning, or ongoing health problems people can experience more than four weeks after first being infected with the virus that causes COVID-19. Older people and those who have certain underlying medical conditions are more likely to get severely ill from COVID-19. Vaccines against COVID-19 are safe and effective.</p>
 		</div>
-		<div class="box">
+		<div data-aos="flip-left" data-aos-duration="3000" class="box">
 			<h2>Should I use soap and water or sanitizer to protect myself?</h2>
 			<p>Handwashing is one of the best ways to protect yourself and your family from getting sick. Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol.</p>
 		</div>
-		<div class="box">
+		<div data-aos="flip-left" data-aos-duration="3000" class="box">
 			<h2>What are the symptoms and complications that COVID-19 can cause?</h2>
 			<p>People with COVID-19 have reported a wide range of symptoms – from mild symptoms to severe illness. Symptoms may appear 2-14 days after exposure to the virus. If you have fever, cough, or other symptoms, you might have COVID-19.</p>
 		</div>
 	</div>
 	<div id="youtube">
 		<h1>YouTube</h1>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9S6xGsoqIBU2V6AZYGlJwZRAFJ3YDreb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe data-aos="fade-left" data-aos-duration="3000"width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9S6xGsoqIBU2V6AZYGlJwZRAFJ3YDreb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 	<div id="hospitals">
 		<h1>Hospitals</h1>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d224125.99818701317!2d77.21246356783082!3d28.63069952537256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospital%20near%20Delhi%20!5e0!3m2!1sen!2sin!4v1642699291780!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		<iframe data-aos="fade-right" data-aos-duration="3000" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d224125.99818701317!2d77.21246356783082!3d28.63069952537256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospital%20near%20Delhi%20!5e0!3m2!1sen!2sin!4v1642699291780!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 	</div>
 	<footer>
 		<p>
@@ -120,5 +122,9 @@
 			</a>
 		</div>
 	</footer>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>
